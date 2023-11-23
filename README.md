@@ -2,39 +2,79 @@
 
 <h1 align="center"> Netflix API </h1>
 
-<p align="justify">Esse projeto teve como objetvio o desenvolvimento de uma API capaz de fazer a leitura e analisar um arquivo .csv, alimentar a base de dados com os dados desse arquivo e, também, exibir os registros no formato JSON. O arquivo .csv contém uma lista com uma variedade de filmes e séries disponíveis na plataforma Netflix.</p>
+<p align="justify">🎯Esse projeto teve como objetivo a criação de uma API capaz de fazer a leitura, analisar os dados de um arquivo .CSV, alimentar a base de dados com os dados desse arquivo e, também, exibir os registros no formato JSON. O arquivo .CSV contém uma lista com uma variedade de filmes e séries disponíveis na plataforma Netflix.</p>
 
-* Instalação:
-* 
- 1. git clone https://github.com/RDev22/moviesAPI.git
- 2. cd moviesAPI
- 3. bundle install
- 4. yarn install
- 5. rails db:create db:migrate
+## 💻 Instalação:
 
-* Iniciar:
-* 
+Clone esse repositório e instale as dependências com os seguinte comandos:
+```
+git clone https://github.com/RDev22/moviesAPI.git
+```
+```
+cd moviesAPI
+```
+```
+bundle install
+```
+```
+yarn install
+```
+```
+rails db:create db:migrate
+```
+
+## Iniciar:
+``` 
  rails s
+```
 
-* Teste
-* 
- rails test
-
-* Como usar a API:
+## ☕ Como usar a API:
  
-  Para listar todos os filmes:
-  http://localhost:3000/movies
+Para listar todos os filmes:
+```
+http://localhost:3000/movies
+```
+
+## 🚀 Rotas:
 
 É possível buscar os títulos utilizando os filtros: title, year, gender e country:
+
+title:
+```
 http://localhost:3000/movies?title=clockwork
+```
+year:
+```
+http://localhost:3000/movies?year=2011
+```
+gender:
+```
+http://localhost:3000/movies?gender=Tvshow
+```
+country:
+```
+http://localhost:3000/movies?country=Brazil
+```
 
-* Teste:
-* 
-  rails test
 
-  http://localhost:3000/movies?title=clockwork
+## 🔒 Teste
+```
+ rails test
+```
+```
+http://localhost:3000/testing
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+* 200 OK - Mensagem após rodar o teste com sucesso:
+```
+{
+  "message": "Ok! Tudo certo com o teste!"
+}
+```
+
+## 🛠️ Tecnologias utilizadas:
+* Ruby 3.1.2
+* Rails 7.0.8
+* PostgreSQL
 
 
-* ...
