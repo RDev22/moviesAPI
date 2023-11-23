@@ -1,6 +1,5 @@
-# README
 
-<h1 align="center"> Netflix API </h1>
+# <h1 align="center"> Netflix API </h1>
 
 <p align="justify">🎯Esse projeto teve como objetivo a criação de uma API capaz de fazer a leitura, analisar os dados de um arquivo .CSV, alimentar a base de dados com os dados desse arquivo e, também, exibir os registros no formato JSON. O arquivo .CSV contém uma lista com uma variedade de filmes e séries disponíveis na plataforma Netflix.</p>
 
