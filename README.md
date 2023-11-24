@@ -46,9 +46,13 @@ year:
 ```
 http://localhost:3000/movies?year=2011
 ```
-gender:
+genre:
 ```
-http://localhost:3000/movies?gender=Tvshow
+http://localhost:3000/movies?genre=TV%20Show
+```
+ou
+```
+http://localhost:3000/movies?genre=Movie
 ```
 country:
 ```
