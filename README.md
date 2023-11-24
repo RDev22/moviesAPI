@@ -36,7 +36,7 @@ http://localhost:3000/movies
 
 ## 🚀 Rotas:
 
-É possível buscar os títulos utilizando os filtros: title, year, gender e country:
+É possível buscar os títulos utilizando os filtros: title, year, genre e country:
 
 title:
 ```
