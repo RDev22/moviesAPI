@@ -4,7 +4,7 @@ class MoviesController < ApplicationController
     offset = params[:offset] || 0
     filter = params.slice(:year, :title, :genre, :country)
     if !filter.empty?
-      @movies = Movie.search(filter).order(year).limit(limit).offset(offset)
+      @movies = Movie.search(filter).order(:year).limit(limit).offset(offset)
     else
       @movies = Movie.all.order(:year).limit(limit).offset(offset)
     end
