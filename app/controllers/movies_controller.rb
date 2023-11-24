@@ -8,7 +8,12 @@ class MoviesController < ApplicationController
     else
       @movies = Movie.all.order(:year).limit(limit).offset(offset)
     end
-    render json: @movies
+
+    if @movies.empty?
+      render json: { message: 'Nenhum título encontrado com os parâmetros fornecidos' }
+    else
+      render json: @movies
+    end
   end
 
   def find_by_id
