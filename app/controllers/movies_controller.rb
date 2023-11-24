@@ -6,7 +6,7 @@ class MoviesController < ApplicationController
     if !filter.empty?
       @movies = Movie.search(filter).order(year: :desc).limit(limit).offset(offset)
     else
-      @movies = Movie.all.order(year: :desc).limit(limit).offset(offset)
+      @movies = Movie.all.order(:year).limit(limit).offset(offset)
     end
     render json: @movies
   end
